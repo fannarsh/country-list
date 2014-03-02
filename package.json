@@ -1,0 +1,32 @@
+{
+  "name": "country-list",
+  "version": "0.0.0",
+  "description": "Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.",
+  "main": "country-list.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.4.8"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fannarsh/country-list.git"
+  },
+  "keywords": [
+    "country",
+    "countries",
+    "ISO 3166-1-alpha-2",
+    "ISO 3166-1"
+  ],
+  "author": "Fannar Snær <fannar@lambagras.is>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/fannarsh/country-list/issues"
+  },
+  "homepage": "https://github.com/fannarsh/country-list"
+}

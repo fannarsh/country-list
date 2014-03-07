@@ -22,3 +22,15 @@ CountryList.prototype.getName = function getName(code) {
   });
   return found;
 };
+
+CountryList.prototype.getNames = function getNames() {
+  return data.map(function(country) {
+    return country.Name;
+  });
+};
+
+CountryList.prototype.getCodes = function getCodes() {
+  return data.map(function(country) {
+    return country.Code;
+  });
+};

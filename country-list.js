@@ -2,23 +2,25 @@
 
 var data = require('./data.json');
 
+/**
+ * Precompute name and code lookups.
+ */
+var nameMap = {};
+var codeMap = {};
+data.forEach(function(country) {
+  nameMap[country.Name.toLowerCase()] = country.Code;
+  codeMap[country.Code.toLowerCase()] = country.Name;
+});
+
 module.exports = CountryList;
 function CountryList() {
   if (!(this instanceof CountryList)) return new CountryList();
 };
 
 CountryList.prototype.getCode = function getCode(name) {
-  var found;
-  data.some(function(country) {
-    if (country.Name.toLowerCase() === name.toLowerCase()) return found = country.Code;
-  });
-  return found;
+  return nameMap[name.toLowerCase()];
 };
 
 CountryList.prototype.getName = function getName(code) {
-  var found;
-  data.some(function(country) {
-    if (country.Code === code.toUpperCase()) return found = country.Name;
-  });
-  return found;
+  return codeMap[code.toLowerCase()];
 };

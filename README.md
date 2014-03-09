@@ -43,6 +43,10 @@ Returns an array of all country names.
 
 Returns an array of all country codes.
 
+## getData()
+
+Returns an array of all country information, in the same format as it gets imported.
+
 # install
 
 ``` cli

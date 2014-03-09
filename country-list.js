@@ -36,3 +36,7 @@ CountryList.prototype.getCodes = function getCodes() {
     return country.code;
   });
 };
+
+CountryList.prototype.getData = function getData() {
+  return data;
+};

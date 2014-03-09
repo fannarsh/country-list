@@ -24,6 +24,9 @@
     "ISO 3166-1"
   ],
   "author": "Fannar Snær <fannar@lambagras.is>",
+  "contributors" : [
+    "Eiríkur Heiðar Nilsson <eirikur@nilsson.is>"
+  ],
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/fannarsh/country-list/issues"

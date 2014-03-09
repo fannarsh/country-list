@@ -35,6 +35,14 @@ Expects the English country name.
 Returns the code for that country.
 If not found, it returns `undefined`.
 
+## getNames()
+
+Returns an array of all country names.
+
+## getCodes()
+
+Returns an array of all country codes.
+
 # install
 
 ``` cli

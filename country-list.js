@@ -8,8 +8,8 @@ var data = require('./data.json');
 var nameMap = {};
 var codeMap = {};
 data.forEach(function(country) {
-  nameMap[country.Name.toLowerCase()] = country.Code;
-  codeMap[country.Code.toLowerCase()] = country.Name;
+  nameMap[country.name.toLowerCase()] = country.code;
+  codeMap[country.code.toLowerCase()] = country.name;
 });
 
 module.exports = CountryList;
@@ -27,12 +27,12 @@ CountryList.prototype.getName = function getName(code) {
 
 CountryList.prototype.getNames = function getNames() {
   return data.map(function(country) {
-    return country.Name;
+    return country.name;
   });
 };
 
 CountryList.prototype.getCodes = function getCodes() {
   return data.map(function(country) {
-    return country.Code;
+    return country.code;
   });
 };

@@ -1,6 +1,6 @@
 {
   "name": "country-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.",
   "main": "country-list.js",
   "directories": {
@@ -24,7 +24,7 @@
     "ISO 3166-1"
   ],
   "author": "Fannar Snær <fannar@lambagras.is>",
-  "contributors" : [
+  "contributors": [
     "Eiríkur Heiðar Nilsson <eirikur@nilsson.is>"
   ],
   "license": "BSD",

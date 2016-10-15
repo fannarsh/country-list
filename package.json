@@ -27,7 +27,7 @@
   "contributors": [
     "Eiríkur Heiðar Nilsson <eirikur@nilsson.is>"
   ],
-  "license": "BSD",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fannarsh/country-list/issues"
   },

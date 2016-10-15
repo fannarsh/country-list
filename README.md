@@ -5,7 +5,7 @@ Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
 
 Uses data from http://data.okfn.org/data/country-list
 
-# example 
+# example
 
 ``` js
 var countries = require('country-list')();
@@ -55,4 +55,4 @@ npm install country-list
 
 # license
 
-BSD
+MIT

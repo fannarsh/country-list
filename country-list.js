@@ -37,6 +37,10 @@ CountryList.prototype.getCodes = function getCodes () {
   })
 }
 
+CountryList.prototype.getList = function () {
+  return codeMap
+}
+
 CountryList.prototype.getData = function getData () {
   return data
 }

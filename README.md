@@ -44,6 +44,14 @@ Returns an array of all country names.
 
 Returns an array of all country codes.
 
+### getNameList()
+
+Returns a key-value object of all countries using the name as key.
+
+### getCodeList()
+
+Returns a key-value object of all countries using the code as key.
+
 ### getData()
 
 Returns an array of all country information, in the same format as it gets imported.

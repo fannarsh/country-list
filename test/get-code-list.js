@@ -5,7 +5,7 @@ var countries = require('../')()
 var data = require('../data.json')
 
 test('get all country names with code as key', function (t) {
-  var list = countries.getCodeList();
+  var list = countries.getCodeList()
 
   t.type(list, Object, 'country list is an object')
   t.equal(Object.keys(list).length, data.length, 'country list should be as many as countries')

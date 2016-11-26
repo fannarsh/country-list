@@ -13,6 +13,7 @@
     "tap": "^7.1.2"
   },
   "scripts": {
+    "pretest": "standard",
     "test": "tap test/*.js"
   },
   "repository": {

@@ -37,7 +37,7 @@ CountryList.prototype.getCodes = function getCodes () {
   })
 }
 
-CountryList.prototype.getList = function () {
+CountryList.prototype.getCodeList = function () {
   return codeMap
 }
 

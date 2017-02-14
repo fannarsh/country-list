@@ -1,6 +1,6 @@
 'use strict'
 
-var data = require('./data.json')
+var data = require('./data.js')
 
 /**
  * Precompute name and code lookups.

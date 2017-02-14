@@ -1,4 +1,4 @@
-[
+module.exports.default = [
   {
     "code": "AF",
     "name": "Afghanistan"
@@ -995,4 +995,4 @@
     "code": "ZW",
     "name": "Zimbabwe"
   }
-]
+];

@@ -12,7 +12,7 @@ data.forEach(function (country) {
   codeMap[country.code.toLowerCase()] = country.name
 })
 
-module.exports = CountryList
+module.exports.default = CountryList
 function CountryList () {
   if (!(this instanceof CountryList)) return new CountryList()
 };

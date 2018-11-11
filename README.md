@@ -6,13 +6,16 @@ Uses data from http://data.okfn.org/data/country-list
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
+### Looking for Version 1
+You can find version 1.* of country-list [here](https://github.com/fannarsh/country-list/tree/1.x).
+
 ## Example
 
 ``` js
-var countries = require('country-list')();
+const { getCode, getName } = require('country-list');
 
-console.log(countries.getName('IS')); // Iceland
-console.log(countries.getCode('Iceland')); // IS
+console.log(getName('IS')); // Iceland
+console.log(getCode('Iceland')); // IS
 ```
 
 ## Methods
@@ -20,7 +23,7 @@ console.log(countries.getCode('Iceland')); // IS
 Usage:
 
 ``` js
-var countries = require('country-list')();
+const countryList = require('country-list');
 ```
 All input is case-insensitive.
 

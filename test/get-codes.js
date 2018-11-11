@@ -1,7 +1,7 @@
 'use strict'
 
 var test = require('tap').test
-var countries = require('../')()
+var countries = require('../')
 var data = require('../data.json')
 
 test('get all country codes', function (t) {

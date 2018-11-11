@@ -2,7 +2,7 @@
 
 Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
 
-Uses data from http://data.okfn.org/data/country-list
+Uses data from https://datahub.io/core/country-list (formerly http://data.okfn.org/data/country-list)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -64,6 +64,11 @@ Returns an array of all country information, in the same format as it gets impor
 ``` cli
 npm install country-list
 ```
+
+## Related Projects
+ - [datasets/country-list](https://github.com/datasets/country-list)
+ - [srcagency/iso-3166-1-codes](https://github.com/srcagency/iso-3166-1-codes)
+ - [olahol/iso-3166-2.js](https://github.com/olahol/iso-3166-2.js)
 
 ## License
 

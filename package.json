@@ -9,12 +9,12 @@
   "dependencies": {},
   "devDependencies": {
     "csv-parser": "^1.11.0",
-    "standard": "^8.4.0",
-    "tap": "^7.1.2"
+    "standard": "^12.0.1",
+    "tap": "^12.0.1"
   },
   "scripts": {
     "pretest": "standard",
-    "test": "tap test/*.js"
+    "test": "tap test/*.js --100"
   },
   "repository": {
     "type": "git",

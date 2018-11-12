@@ -1,5 +1,7 @@
 # country-list
 
+[![Build Status](https://travis-ci.com/fannarsh/country-list.svg?branch=master)](https://travis-ci.com/fannarsh/country-list) [![Coverage Status](https://coveralls.io/repos/github/fannarsh/country-list/badge.svg?branch=master)](https://coveralls.io/github/fannarsh/country-list?branch=master)
+
 Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
 
 Uses data from https://datahub.io/core/country-list (formerly http://data.okfn.org/data/country-list)

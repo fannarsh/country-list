@@ -18,6 +18,18 @@ const { getCode, getName } = require('country-list');
 
 console.log(getName('IS')); // Iceland
 console.log(getCode('Iceland')); // IS
+console.log(getCode('Nowhere-to-be-found-land')); // undefined
+```
+
+And how to change the name of a country 
+``` js
+const { overwrite, getName } = require('country-list');
+overwrite([{
+  code: 'TW',
+  name: 'Taiwan'
+}])
+
+console.log(getName('TW')); // Taiwan
 ```
 
 ## Methods
@@ -29,17 +41,27 @@ const countryList = require('country-list');
 ```
 All input is case-insensitive.
 
+### overwrite(countries)
+
+Expects an array of country objects containing `code` and `name` properties.
+``` js
+[{
+  code: 'TW',
+  name: 'Taiwan'
+}]
+```
+
 ### getName(code)
 
-Expects a two-digit country code.
-Returns the name for that country.
-If not found, it returns `undefined`.
+Expects a two-digit country code.  
+Returns the name for that country.  
+If not found, it returns `undefined`.  
 
 ### getCode(name)
 
-Expects the English country name.
-Returns the code for that country.
-If not found, it returns `undefined`.
+Expects the English country name.  
+Returns the code for that country.  
+If not found, it returns `undefined`.  
 
 ### getNames()
 

@@ -5,10 +5,24 @@ var data = require('./data.json')
 /** Precompute name and code lookups. */
 var nameMap = {}
 var codeMap = {}
-data.forEach(function (country) {
+data.forEach(mapCodeAndName)
+
+function mapCodeAndName (country) {
   nameMap[country.name.toLowerCase()] = country.code
   codeMap[country.code.toLowerCase()] = country.name
-})
+}
+
+exports.overwrite = function overwrite (countries) {
+  if (!countries || !countries.length) return 'asdf'
+  countries.forEach(function (country) {
+    var foundIndex = data.findIndex(function (item) {
+      return item.code === country.code
+    })
+    // console.log('Changing "%s" to "%s"', data[foundIndex].name, country.name)
+    data[foundIndex] = country
+    mapCodeAndName(country)
+  })
+}
 
 exports.getCode = function getCode (name) {
   return nameMap[name.toLowerCase()]

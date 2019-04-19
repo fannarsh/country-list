@@ -9,7 +9,10 @@ const correctedTW = {
 }
 
 test('Handle non overwrite', t => {
-  t.ok(overwrite(), 'Shouldn\'t do anything without countries map')
+  const currentCountries = getData()
+  overwrite()
+  const newCountries = getData()
+  t.equal(currentCountries, newCountries, 'Shouldn\'t do anything without countries map')
   t.end()
 })
 

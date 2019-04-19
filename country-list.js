@@ -13,7 +13,7 @@ function mapCodeAndName (country) {
 }
 
 exports.overwrite = function overwrite (countries) {
-  if (!countries || !countries.length) return;
+  if (!countries || !countries.length) return
   countries.forEach(function (country) {
     var foundIndex = data.findIndex(function (item) {
       return item.code === country.code

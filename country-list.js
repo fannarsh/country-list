@@ -13,12 +13,11 @@ function mapCodeAndName (country) {
 }
 
 exports.overwrite = function overwrite (countries) {
-  if (!countries || !countries.length) return 'asdf'
+  if (!countries || !countries.length) return;
   countries.forEach(function (country) {
     var foundIndex = data.findIndex(function (item) {
       return item.code === country.code
     })
-    // console.log('Changing "%s" to "%s"', data[foundIndex].name, country.name)
     data[foundIndex] = country
     mapCodeAndName(country)
   })

@@ -1,7 +1,5 @@
-'use strict'
-
-const { test } = require('tap')
-const { overwrite, getData, getName } = require('../')
+import { test } from 'tape'
+import { overwrite, getData, getName } from '../country-list.js'
 
 const correctedTW = {
   code: 'TW',

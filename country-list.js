@@ -1,15 +1,18 @@
 'use strict'
 
 var data = require('./data.json')
+var removeDiacritics = require('diacritics').remove
 
 /** Precompute name and code lookups. */
 var nameMap = {}
+var simpleNameMap = {}
 var codeMap = {}
 data.forEach(mapCodeAndName)
 
 function mapCodeAndName (country) {
   nameMap[country.name.toLowerCase()] = country.code
   codeMap[country.code.toLowerCase()] = country.name
+  simpleNameMap[removeDiacritics(country.name.toLowerCase())] = country.code
 }
 
 exports.overwrite = function overwrite (countries) {
@@ -25,6 +28,10 @@ exports.overwrite = function overwrite (countries) {
 
 exports.getCode = function getCode (name) {
   return nameMap[name.toLowerCase()]
+}
+
+exports.getCodeSimple = function getCodeSimple (name) {
+  return simpleNameMap[removeDiacritics(name).toLowerCase()]
 }
 
 exports.getName = function getName (code) {
@@ -49,6 +56,10 @@ exports.getCodeList = function getCodeList () {
 
 exports.getNameList = function getNameList () {
   return nameMap
+}
+
+exports.getSimpleNameList = function getSimpleNameList () {
+  return simpleNameMap
 }
 
 exports.getData = function getData () {

@@ -11,8 +11,8 @@ data.forEach(mapCodeAndName)
 
 function mapCodeAndName (country) {
   nameMap[country.name.toLowerCase()] = country.code
-  codeMap[country.code.toLowerCase()] = country.name
   simpleNameMap[removeDiacritics(country.name.toLowerCase())] = country.code
+  codeMap[country.code.toLowerCase()] = country.name
 }
 
 exports.overwrite = function overwrite (countries) {

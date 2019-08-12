@@ -1,6 +1,4 @@
-'use strict'
-
-var data = require('./data.json')
+import data from './data.json'
 
 /** Precompute name and code lookups. */
 var nameMap = {}
@@ -12,7 +10,7 @@ function mapCodeAndName (country) {
   codeMap[country.code.toLowerCase()] = country.name
 }
 
-exports.overwrite = function overwrite (countries) {
+export function overwrite (countries) {
   if (!countries || !countries.length) return
   countries.forEach(function (country) {
     var foundIndex = data.findIndex(function (item) {
@@ -23,34 +21,34 @@ exports.overwrite = function overwrite (countries) {
   })
 }
 
-exports.getCode = function getCode (name) {
+export function getCode (name) {
   return nameMap[name.toLowerCase()]
 }
 
-exports.getName = function getName (code) {
+export function getName (code) {
   return codeMap[code.toLowerCase()]
 }
 
-exports.getNames = function getNames () {
+export function getNames () {
   return data.map(function (country) {
     return country.name
   })
 }
 
-exports.getCodes = function getCodes () {
+export function getCodes () {
   return data.map(function (country) {
     return country.code
   })
 }
 
-exports.getCodeList = function getCodeList () {
+export function getCodeList () {
   return codeMap
 }
 
-exports.getNameList = function getNameList () {
+export function getNameList () {
   return nameMap
 }
 
-exports.getData = function getData () {
+export function getData () {
   return data
 }

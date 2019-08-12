@@ -1,4 +1,4 @@
-import { test } from 'tape'
+import { test } from 'tap'
 import { getCode, getName } from '../country-list.js'
 
 test('get code and name for country', t => {

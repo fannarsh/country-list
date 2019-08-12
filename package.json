@@ -11,15 +11,14 @@
   "dependencies": {},
   "devDependencies": {
     "csv-parser": "^1.11.0",
-    "esm": "^3.2.25",
     "rollup": "^1.15.6",
     "rollup-plugin-json": "^4.0.0",
     "standard": "^12.0.1",
-    "tape": "^4.10.2"
+    "tap": "^14.6.1"
   },
   "scripts": {
     "pretest": "standard",
-    "test": "tape -r esm test/*.js",
+    "test": "tap test/*.js --100",
     "build": "rollup -c",
     "prepublishOnly": "rollup -c"
   },

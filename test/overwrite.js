@@ -1,4 +1,4 @@
-import { test } from 'tape'
+import { test } from 'tap'
 import { overwrite, getData, getName } from '../country-list.js'
 
 const correctedTW = {

@@ -1,8 +1,6 @@
-'use strict'
-
-var { test } = require('tap')
-var { getCodeList } = require('../')
-var data = require('../data.json')
+import { test } from 'tap'
+import { getCodeList } from '../country-list.js'
+import data from '../data.json'
 
 test('get all country names with code as key', function (t) {
   var list = getCodeList()

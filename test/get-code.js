@@ -1,7 +1,5 @@
-'use strict'
-
-var { test } = require('tap')
-var { getCode } = require('../')
+import { test } from 'tap'
+import { getCode } from '../country-list.js'
 
 test('get code from country name', function (t) {
   t.equal(getCode('Iceland'), 'IS', 'name "Iceland" should return IS')

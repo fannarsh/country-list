@@ -1,7 +1,5 @@
-'use strict'
-
-const { test } = require('tap')
-const { getCode, getName } = require('../')
+import { test } from 'tap'
+import { getCode, getName } from '../country-list.js'
 
 test('get code and name for country', t => {
   t.equal(getCode('Iceland'), 'IS', 'name "Iceland" should return IS')

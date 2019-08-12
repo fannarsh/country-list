@@ -1,8 +1,6 @@
-'use strict'
-
-var { test } = require('tap')
-var { getNames } = require('../')
-var data = require('../data.json')
+import { test } from 'tap'
+import { getNames } from '../country-list.js'
+import data from '../data.json'
 
 test('get all country names', function (t) {
   t.equal(getNames().length, data.length, 'country names should be as many as countries')

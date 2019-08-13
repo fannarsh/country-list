@@ -4,7 +4,7 @@
 
 Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
 
-Uses data from https://datahub.io/core/country-list (formerly http://data.okfn.org/data/country-list)
+Uses data from https://www.iso.org/iso-3166-country-codes.html
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -97,3 +97,7 @@ npm install country-list
 ## License
 
 MIT
+
+## Source
+ - [ISO (International Organization for Standardization)](https://www.iso.org/iso-3166-country-codes.html)
+>ISO makes the list of alpha-2 country codes available for internal use and non-commercial purposes free of charge.

@@ -18,7 +18,7 @@ test('Handle non overwrite', t => {
 
 test('Get overwritten name from country code', t => {
   overwrite([correctedTW])
-  t.equal(getData()[217], correctedTW, 'Should be the new country object')
+  t.equal(getData()[227], correctedTW, 'Should be the new country object')
   t.equal(getName('TW'), 'Taiwan', 'code "TW" should now return Taiwan')
   t.end()
 })

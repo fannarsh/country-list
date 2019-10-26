@@ -51,6 +51,10 @@ exports.getNameList = function getNameList () {
   return nameMap
 }
 
+/**
+ * @type {{code: string, name: string}} country
+ * @returns {Array.country}
+ */
 exports.getData = function getData () {
   return data
 }

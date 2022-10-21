@@ -75,7 +75,10 @@
   { "code": "FO", "name": "Faroe Islands" },
   { "code": "FR", "name": "France" },
   { "code": "GA", "name": "Gabon" },
-  { "code": "GB", "name": "United Kingdom of Great Britain and Northern Ireland" },
+  {
+    "code": "GB",
+    "name": "United Kingdom of Great Britain and Northern Ireland"
+  },
   { "code": "GD", "name": "Grenada" },
   { "code": "GE", "name": "Georgia" },
   { "code": "GF", "name": "French Guiana" },
@@ -223,7 +226,7 @@
   { "code": "TM", "name": "Turkmenistan" },
   { "code": "TN", "name": "Tunisia" },
   { "code": "TO", "name": "Tonga" },
-  { "code": "TR", "name": "Turkey" },
+  { "code": "TR", "name": "Türkiye" },
   { "code": "TT", "name": "Trinidad and Tobago" },
   { "code": "TV", "name": "Tuvalu" },
   { "code": "TW", "name": "Taiwan, Province of China" },
